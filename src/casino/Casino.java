@@ -1,14 +1,15 @@
 package casino;
+import player.Player;
 
 public class Casino implements Playable {
-    private LinkedList<Integer> players;
+    private LinkedList<Player> players;
 
-    public Casino(LinkedList<Integer> players){
+    public Casino(LinkedList<Player> players){
         this.players = players;
     }
 
     public Casino(){
-        this.players = new LinkedList<Integer>();
+        this.players = new LinkedList<Player>();
     }
 
 }
